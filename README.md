@@ -21,3 +21,34 @@
 9) [Django Web Framework](https://www.coursera.org/learn/django-web-framework?specialization=meta-full-stack-developer) 
 
 10) [APIs](https://www.coursera.org/learn/apis?specialization=meta-full-stack-developer)
+
+## Instruction
+
+Using `pipenv` instead of `venv`
+```bash
+# `pip3 install pipenv` doesn't work
+# installed via pipx
+sudo apt install pipx
+pipx ensurepath
+pipx install pipenv
+
+# make sure pipenv is installed on system
+pipenv --version
+
+# to use Django
+pipenv install django
+
+# create Django project
+# To activate this project's virtualenv
+pipenv shell
+
+```
+
+## Links
+
+**Course 10**
+Postman
+Insomnia
+Python Indent by Kevin Rose (correct Python indentation in VS Code)
+Djaneiro by Scott Barkman (useful Django snippets)
+

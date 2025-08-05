@@ -1,0 +1,79 @@
+If you want to work quickly and efficiently as a developer, you need the right tools. For example, an intelligent
+code editor can help you develop more rapidly and
+become more competent. In this video, you will learn about a few command line and graphical tools that you can use to play around
+with your APIs. You will also explore a
+practical demonstration of how to test APIs in Insomnia. These tools are a
+cross-platform, so you can use them on Windows, macOS, and Linux. You will be using
+some of these tools like Insomnia
+throughout this course. It's important to
+learn about them now. Let's get started. First is curl, a well-known tool for
+developers who want to make HTTP calls from
+the command line. It is available for all
+major operating systems, but it doesn't have
+a graphical tool. To use curl, simply
+open your PowerShell in Windows or the terminal
+and Linux or macOS, type curl and hit "Enter". Curl makes it easy to
+send HTTP GET requests. For example, simply add
+the API URI after curl. This command sends a HTTP
+GET request to Postman Echo, a service from
+Postman to display the headers and request
+body sent to it. Pretty useful for
+testing API calls. It works slightly differently
+for a POST request. This time, add to the
+request body using hyphen d and the
+HTTP method name, which is POST, preceded by hyphen X. The second tool is Postman, which has cross-platform
+desktop tools that make it easy to test
+and debug APIs. With an advanced graphical
+interface and a web version, Postman is a powerful
+tool for API development. With Postman, you spend
+less time fiddling with API details and more time
+building the perfect API. You can explore
+their website and the additional readings for more information and
+learning materials. Another important tool is
+the Insomnia REST Client, a powerful REST API
+client used to store, organize, and execute
+REST API requests. Insomnia is free,
+cross-platform, and comes with a very
+user-friendly interface. You can download and
+install insomnia for your operating
+system from the link provided in the
+additional reading at the end of this lesson. Note that there's only a
+desktop version for insomnia. In the rest of this course, you will be using
+Insomnia to play and interact with
+the APIs you build. Let's examine how to use this. Insomnia is a great tool
+for playing with APIs. All requests in Insomnia will be saved in a
+request collection. To get started, click
+on the Create button in the top right corner and
+select Request collection. Give it a name like first
+collection and click on Create. Now you are inside
+an empty collection. To create your
+first API request, click on the Plus icon on the left sidebar and
+select HTTP Request. You can also do this by
+pressing Command plus N on macOS or Control plus N
+in Windows and Linux. You can double-click on
+the default request name, new request, and
+change the name to something more personal,
+like first request. At the top of the middle
+section where it says GET, you can click and
+select the type of HTTP method your
+request is going to be. Leave it as GET for now. In the text box next to it, write your API URL, httpshttpbin.org/get?project=LittleLemon. httpbin.org is a free service that allows you to
+experiment with different types of HTTP methods. When you call one of these APIs, it prints back what
+you sent to it. Now hit the Send button on
+the right and you will see that httpbin has returned the same query argument
+you sent to it, which in your case was project
+is equal to LittleLemon. This time let's try making
+a new HTTP POST request. To do this, click
+on the Plus icon in the left sidebar and
+select HTTP Request. Once the request is created, double-click on its name
+and give it a new name, such as second request. Now click on the HTTP method drop-down and select
+POST and this time add httpshttpbin.org/post
+in the URL field. You already know that a HTTP POST request accepts arguments as form
+data or JSON data. With Insomnia, you can easily input data for a POST request by clicking on the body
+tab and selecting Form URL Encoded or JSON. Here in this argument window, you can finally layout all your arguments in an easy to use and
+organized manner. On the left, you can write the argument name and on
+the right, the value. Write project in
+the argument field and LittleLemon as the value. Now click on the Send button
+to display the output. You can create as
+many requests as you want and come back later
+to play with them anytime. In this video, you learned about great tools such
+as Curl, Postman, and Insomnia that you can use to create and test your APIs.
