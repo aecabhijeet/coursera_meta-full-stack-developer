@@ -1,2 +1,3 @@
-# coursera_meta-full-stack-developer
-Meta Full Stack Developer Specialization from Coursera
+# Meta Full Stack Developer Specialization
+
+[Course](https://www.coursera.org/specializations/meta-full-stack-developer)
