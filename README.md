@@ -43,12 +43,26 @@ pipenv install django
 pipenv shell
 
 ```
+## Status
+
+Course 10 studied till 10.1.26 practice
+
 
 ## Links
 
-**Course 10**
-Postman
-Insomnia
+### Course 10
+**Module 1**
+[Postman](https://www.postman.com/)
+[Postman Echo](https://www.postman.com/postman/published-postman-templates/documentation/ae2ja6x/postman-echo?ctx=documentation)
+[Insomnia](https://insomnia.rest/) [Insomnia Docs](https://docs.insomnia.rest/insomnia/get-started)
+[httpbin](https://httpbin.org/)
+[curl](https://curl.se/)
+[httpie](https://httpie.io/)
+[List of HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
+[pipenv](https://pipenv.pypa.io/en/latest/)
+[django](https://www.djangoproject.com/)
 Python Indent by Kevin Rose (correct Python indentation in VS Code)
 Djaneiro by Scott Barkman (useful Django snippets)
+
+
 

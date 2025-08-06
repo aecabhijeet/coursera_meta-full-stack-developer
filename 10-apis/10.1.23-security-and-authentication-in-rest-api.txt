@@ -1,0 +1,60 @@
+By now you should know the best
+practices for developing APIs. But there is another important aspect
+of APIs to consider, security. The core purpose of APIs is to
+make your data more accessible. Not just for your apps and websites but
+also for third party clients. This way your data
+becomes even more useful. But don't forget,
+because APIs are publicly available, they may pose a risk to
+your back-end services. Essentially, APIs give third party apps
+access to your server and database. That is why it is crucial to secure APIs. This video covers how to keep
+your API safe and secure. And you'll learn about
+various security concepts and how to implement them in your own APIs. First up is SSL, or Secure Socket Layer. SSL encrypts your data and protect your data when it leaves
+your browser and the web server. When you set up the SSL certificates
+properly your APIs can be served over HTTPS. The frontend and mobile application team
+that works on the Little Lemon project, want to ensure that the data
+is transported securely. So, the API team has used SSL
+certificates from a reputed provider and installed them. Now all the API endpoints are secured and
+serve data over HTTPS instead of HTTP. That's why it's important
+to always check that the endpoint of your APIs starts
+with HTTPS instead of HTTP. Next is signed URLs. The little Lemon Project team
+wants to ensure that the API calls are coming to it from their mobile
+application and their website only. This is where signed URLs come in. Signed URLs give a client application
+limited access to a specific resource for a brief period of time. With a signed URL,
+every time an API is called, a particular piece of text called
+a signature is included with the URL. Server side code can
+verify the signature and ensure that the call comes
+from an authentic source. But how do developers
+create these signatures? HMAC is a popular signing mechanism
+used by modern applications. It is easy to use and ensures the
+authenticity and integrity of the message. For example, some secret message,
+encoded by a digest algorithm with a secret key, some secret
+key creates this HMAC signature. Next, let's discuss authentication. All of us are familiar with the user
+names and password based authentication, but sending a user name and passwords
+to every API call is frustrating and it's not secure. So, the Little Lemon team prefers
+using token based authentication over HTTP based authentication
+when securing its API. Because basic authentication requires
+users to send their user name and password in every call. With token-based authentication,
+the user sends their user name and password to the sign in URL, and
+then receives a unique token in text form. After that, every API call will
+include this token as a HTTP header. The server side code can check the token,
+extract the information hidden in it and match it with an existing user. After this verification, the rest of the work is performed
+on behalf of that matching user. To create this token, you can use an ad hoc policy from
+the backend framework we're using, or you can use something more industry
+standard, like JSON Web Token or JWT. You will learn more about
+this later in the course. Next, you need to know that there are a
+couple of popular HTTP codes involved during the authentication process,
+that you should be aware of. 401 means unauthorized. In this context, unauthorized means
+the user name and password don't match. So the server cannot continue further. And then there is 403,
+which means forbidden. This is an interesting code, and it means
+that your credentials are valid and you have successfully identified yourself,
+but you don't have the authority
+to perform the action. Last is the cross origin resource
+sharing or CORS policy and firewalls. When you design an A PI, you can accept
+calls from everywhere, or by configuring the cores headers, you can only accept
+calls from some specific domains. And finally, another security measure
+that you can use is firewalls. If you want to ensure that only specific
+IP addresses can access your A PI, you can use a firewall
+application on your server. In this video,
+you have learned how to protect your APIs. Security is an important
+consideration when designing APIs, and you are now better positioned
+to protect your infrastructure and keep your user data safe and secure.

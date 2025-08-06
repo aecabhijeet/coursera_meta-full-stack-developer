@@ -1,0 +1,52 @@
+The Little Lemon API provides a variety of
+API which allow you to view the details of an order. The output of these API may contain
+sensitive data such as customers delivery addresses which should not
+be visible to the public. Only manager or delivery crew accounts
+should be able to access these APIs and anyone else who tries to
+access them should be denied. This is where access control
+comes in handy in an API project, with access control you can specify which
+users are allowed to access your API. And what data they can see, that way
+you can be sure that only the people who are supposed to manage
+your data can access it. In this video you will learn about
+controlling access to your APIs. Roles and privileges are the building
+blocks of designing and access control system. A role is a collection of privileges and a privilege is if you are allowed
+to do a particular task. If you consider the customer
+role in the restaurant project, it is made of the following privileges. Customers can browse menu items,
+add menu items to the cart, place orders, add food reviews and
+browse their own orders. On the other hand, someone with a manager
+role will be able to do the following, add menu items, edit menu items,
+delete menu items and browse all orders. Managers can also browse customer data, assign orders to the delivery crew and
+browse transaction data. And the delivery crew will only be able
+to perform the following tasks, browse orders that are assigned to them and
+update the status of an assigned order. There can be several roles like
+these in your project, for example, administrators, senior managers,
+HR accounts and so on. Each role has a collection of
+carefully thought out privileges, the more detailed and specific these
+privileges are the better the access control system you can design for
+your API project. You have probably heard about
+the term authorization before, it is just another word for
+access control. Keep in mind that authentication and
+authorization are two different things. Authentication gets you in and
+authorization allows you to do something after authentication or
+prevents you from doing it. In a real life project, a user can perform
+multiple tasks from different roles. For example the general manager of the
+Little Lemon restaurant should be able to perform everything an accountant, HR
+representative and a normal manager can. So how can you deal with such
+issues while designing the API. You can create one role and
+assign all the essential privileges to it. So a manager will have all the privileges
+and accountant as, then you can update or edit these privileges from
+time to time as needed. This makes it easy to keep your rolls
+up to date and tailored to your needs. The second approach is that one
+user can have multiple roles, task specific roles make it easy to assign
+the right privileges to the right people. So your accountants will only have
+access to accounting features while your HR team will only have access
+to HR management features. And there's also a manager specific
+role with relevant privileges, this way you can assign all three
+roles to the general manager and they will be able to perform every task
+an accountant HR and a manager can do. And if you assign a new privilege
+to the accountant role, the general manager will automatically
+have that privilege added to their role. API design is not complete without
+effective access control by taking the proper time to design and
+plan out your privileges and roles. You make life easier for developers and
+avoid costly debugging and refactoring down the road. A well designed API access control system
+is an asset for the whole project, it saves time and money in the long run.
